@@ -23,7 +23,7 @@ statement:
 
 function:
     FUNC data_type ID '(' ( data_type ident? | data_type ident(','data_type ident)* ) ')'
-    '{' (statement|declaration)* RETURN ident';' '}' ';' #func_def
+    '{' (statement|declaration)* RETURN (ident|expr)';' '}' ';' #func_def
 ;
 
 ident:
@@ -70,3 +70,5 @@ DEC: [0-9]+.{1}[0-9]+;
 STR: '"' ~["]* '"';
 
 WS : [ \t\n\r]+ -> skip;
+
+

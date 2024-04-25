@@ -1,2 +1,6 @@
-int x = 10;
-int s = x + b;
+int a = 10;
+const int b;
+a = 20;
+c = a;
+int d = a + b;
+e = a * b;
