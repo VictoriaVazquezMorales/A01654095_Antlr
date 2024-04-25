@@ -1,0 +1,4 @@
+func int main(int paramA, str paramB, float paramC) {
+    int something = 10;
+    return 2.2;
+};
